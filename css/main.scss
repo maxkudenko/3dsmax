@@ -1,0 +1,1031 @@
+
+//header!!!!!!!!!!!!!!!!!!!!
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #282828;
+  border-bottom: 1px solid #383838;
+
+  .logo {
+    @media (max-width: 640px) {
+      margin: 25px 0 29px 20px;
+    }
+    margin: 25px 0 29px 80px;
+  }
+
+  .menu {
+    @media (max-width: 640px) {
+      margin: 37px 25px 29px 0;
+    }
+    margin: 37px 81px 29px 0;
+
+    li {
+      @media (max-width: 1240px) {
+        margin-right: 0;
+        margin-top: 10px;
+      }
+      margin-right: 25px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      a {
+        color: #fff;
+        font-family: "SegoeWPSemibold", sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+          color: #ff1e3e;
+        }
+      }
+
+      .fa-caret-down {
+        height: 6px;
+        width: 8px;
+        color: #ff1e3e;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+//BURGER
+.slicknav_menu {
+  display:none;
+}
+
+@media (max-width: 1240px) {
+  #menu {
+    display:none;
+  }
+
+  .slicknav_menu {
+    display:block;
+  }
+}
+
+//header!!!!!!!!!!!!!!!!!!!!
+
+
+//title!!!!!!!!!!!!!!!!!!!!
+
+.title {
+  @media (max-width: 640px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  display: flex;
+  justify-content: space-between;
+  background: url("../img/main-background.jpg");
+  padding-top: 105px;
+  padding-bottom: 157px;
+
+
+  .description-wrapper {
+    position: relative;
+  }
+
+  .description {
+    @media (max-width: 1620px) {
+      left: 100px;
+    }
+    @media (max-width: 1240px) {
+      position: static;
+      padding-top: 50px;
+      padding-left: 100px;
+    }
+    @media (max-width: 640px) {
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    text-align: left;
+    position: absolute;
+    top: 130px;
+    left: 510px;
+
+    span {
+      @media (max-width: 640px) {
+        font-size: 3vw;
+      }
+      font-family: "SegoeWPSemibold", sans-serif;
+      font-size: 17px;
+      letter-spacing: 1.28px;
+    }
+
+    h1 {
+      @media (max-width: 640px) {
+        font-size: 10vw;
+        margin-top: 35px;
+        margin-bottom: 70px;
+      }
+      margin-top: 65px;
+      margin-bottom: 135px;
+      max-width: 605px;
+      position: relative;
+
+      &:after {
+        @media (max-width: 640px) {
+          top: 25vw;
+        }
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 215px;
+        width: 211px;
+        height: 5px;
+        background-color: #ff1e3e;
+      }
+    }
+
+    .button-holder{
+      @media (max-width: 640px) {
+        text-align: center;
+      }
+      text-align: right;
+
+      button {
+        color: #fff;
+        cursor: pointer;
+        width: 240px;
+        height: 52px;
+        background-color: #ff1e3e;
+        font-family: "SegoeWP",sans-serif;
+        font-size: 17px;
+        letter-spacing: 3px;
+        margin-top: 87px;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+          background-color: #fff;
+          color: #ff1e3e;
+        }
+      }
+    }
+
+  }
+
+  .photo {
+    @media (max-width: 1240px) {
+      display: none;
+    }
+  }
+
+}
+
+//title!!!!!!!!!!!!!!!!!!!!
+
+
+//benefits!!!!!!!!!!!!!!!!!
+
+.benefits {
+  @media (max-width: 960px) {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1123px;
+  margin: 0 auto;
+  padding-top: 122px;
+  padding-bottom: 134px;
+  flex-wrap: wrap;
+
+  .benefits-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .benefits-description {
+    @media (max-width: 960px) {
+      padding: 30px 10px 0 10px;
+    }
+    text-align: left;
+    max-width: 640px;
+
+    p {
+      color: #232323;
+      line-height: 28px;
+
+      span {
+        font-family: 'SegoeWPBold', sans-serif;
+      }
+
+      &:first-child {
+        padding-bottom: 34px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      &.bold {
+        font-family: 'SegoeWPBold', sans-serif;
+        padding: 35px 0 40px 9px;
+      }
+    }
+
+    ul {
+
+      li:nth-child(even) {
+        @media (max-width: 640px) {
+          margin-left: 0;
+        }
+        margin-left: 40px;
+      }
+
+      li {
+        padding-left: 45px;
+        padding-bottom: 40px;
+        position: relative;
+
+        span:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 8px;
+          width: 20px;
+          height: 25px;
+          background: url("../img/sprite.png") no-repeat;
+        }
+
+        span.house:before {
+          background-position: -45px;
+          width: 24px;
+        }
+
+        span.license:before {
+          background-position: -18px;
+          width: 24px;
+        }
+
+        span.video:before {
+          background-position: -72px;
+          width: 24px;
+        }
+
+      }
+    }
+  }
+}
+
+//benefits!!!!!!!!!!!!!!!!!
+
+
+//program!!!!!!!!!!!!!!!!!!
+
+.program {
+  @media (max-width: 640px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: none;
+  }
+  background: url("../img/program-background.png");
+  background-color: #282828;
+  padding-top: 120px;
+  padding-bottom: 105px;
+
+  .program-heading {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 90px;
+      width: 81px;
+      height: 79px;
+      background-color: #ff1e3e;
+    }
+
+    h2 {
+      @media (max-width: 640px) {
+        padding-left: 40px;
+      }
+      text-align: left;
+      padding-left: 118px;
+      position: absolute;
+    }
+  }
+
+  ul {
+    @media (max-width: 640px) {
+      padding-top: 100px;
+      padding-bottom: 50px;
+      display: block;
+    }
+    padding-top: 200px;
+    padding-bottom: 208px;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      @media (max-width: 640px) {
+        padding: 20px;
+      }
+
+      .circle {
+        height: 160px;
+        width: 160px;
+        border: 8px solid #393939;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 70px;
+
+        &.fundamental {
+          background: url("../img/program-img1.png") no-repeat center center;
+        }
+        &.exterior {
+          background: url("../img/program-img2.png") no-repeat center center;
+        }
+        &.interior {
+          background: url("../img/program-img3.png") no-repeat center center;
+        }
+        &.architecture {
+          background: url("../img/program-img4.png") no-repeat center center;
+        }
+
+        &:after {
+          position: absolute;
+          width: 81px;
+          height: 79px;
+          color: #fff;
+          top: -15px;
+          left: 90px;
+          font-size: 32px;
+        }
+
+        &.fundamental:after {
+          content: '01';
+        }
+        &.exterior:after {
+          content: '02';
+        }
+        &.interior:after {
+          content: '03';
+        }
+        &.architecture:after {
+          content: '04';
+        }
+
+        &:before {
+          position: absolute;
+          top: 200px;
+          left: 75px;
+          font-family: "SegoeWPBold", sans-serif;
+          font-size: 55px;
+          color: #2c2c2c;
+        }
+
+        &.fundamental:before {
+          content: '01';
+          left: 105px;
+        }
+        &.exterior:before {
+          content: '02';
+        }
+        &.interior:before {
+          content: '03';
+        }
+        &.architecture:before {
+          content: '04';
+        }
+
+      }
+
+      p {
+        position: relative;
+      }
+
+      span {
+        font-family: "SegoeWPLight", sans-serif;
+
+        &.program-description {
+          font-family: "SegoeWPBold", sans-serif;
+        }
+      }
+    }
+  }
+
+  .button-holder {
+    text-align: right;
+
+    button {
+      width: 469px;
+      height: 69px;
+      background-color: #ff1e3e;
+      color: #fff;
+      font-family: "SegoeWP",sans-serif;
+      font-size: 17px;
+      text-align: left;
+      letter-spacing: 3px;
+      transition: all ease-in-out 0.5s;
+
+      a {
+        transition: all ease-in-out 0.5s;
+        padding-left: 55px;
+        position: relative;
+
+        &:after {
+          content: '+';
+          position: absolute;
+          top: -15px;
+          right: -45px;
+          font-size: 43px;
+        }
+      }
+
+      &:hover {
+        background-color: #fff;
+
+        a {
+          color: #ff1e3e;
+        }
+      }
+    }
+  }
+}
+
+//program!!!!!!!!!!!!!!!!!!
+
+
+
+
+//teacher!!!!!!!!!!!!!!!!!!
+
+.teacher {
+  @media (max-width: 960px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 10px 50px 10px;
+  }
+  max-width: 1125px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto;
+  text-align: left;
+  padding: 185px 0 277px 0;
+
+  .teacher-title {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      color: #000;
+      text-transform: uppercase;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 65px;
+        width: 211px;
+        height: 5px;
+        background-color: #ff1e3e;
+      }
+    }
+
+    p {
+      @media (max-width: 960px) {
+        margin-top: 50px;
+      }
+      color: #000;
+      line-height: 28px;
+    }
+
+    span {
+      color: #000;
+      font-family: "SegoeWPBold", sans-serif;
+
+      &.link {
+        position: relative;
+        padding-left: 35px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 22px;
+          width: 22px;
+          top: 0;
+          left: 0;
+          background: url("../img/globe.png") no-repeat;
+        }
+      }
+    }
+  }
+
+  .teacher-img {
+    @media (max-width: 960px) {
+      margin-top: 50px;
+    }
+    position: relative;
+
+    &:after {
+      @media (max-width: 640px) {
+        left: -10px;
+      }
+      content: 'преподаватель курса';
+      position: absolute;
+      width: 222px;
+      height: 38px;
+      background-color: #ff1e3e;
+      top: 330px;
+      left: -60px;
+      text-align: center;
+      line-height: 38px;
+      letter-spacing: 1px;
+    }
+  }
+
+}
+
+
+//teacher!!!!!!!!!!!!!!!!!!
+
+
+//free-lecture!!!!!!!!!!!!!
+
+.free-lecture {
+  max-height: 675px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-top: 8px solid #ff1e3e;
+  display: flex;
+
+  .img-holder {
+    @media (max-width: 960px) {
+      display: none;
+    }
+    width: 50%;
+  }
+
+  .form-wrapper {
+    padding-top: 105px;
+    padding-bottom: 145px;
+    background: url("../img/free=lection-bcg.jpg") no-repeat;
+    position: relative;
+    width: 951px;
+
+    .form-holder {
+      max-width: 505px;
+      margin: 0 auto;
+
+      h2 {
+        position: relative;
+
+        &:after {
+          @media (max-width: 960px) {
+            display: none;
+          }
+          content: '';
+          background-color: #444444;
+          position: absolute;
+          top: 57px;
+          left: 125px;
+          width: 236px;
+          height: 1px;
+        }
+      }
+
+      p {
+        margin-top: 52px;
+      }
+    }
+
+    form {
+      padding-top: 83px;
+    }
+
+    input {
+      margin-top: 17px;
+      width: 385px;
+      height: 52px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #ff1e3e;
+      color: #fff;
+      font-family: "SegoeWP",sans-serif;
+      font-size: 17px;
+      letter-spacing: 3px;
+      width: 385px;
+      height: 52px;
+      transition: all ease-in-out 0.5s;
+      margin-top: 75px;
+
+      &:hover {
+        background-color: #fff;
+        color: #ff1e3e;
+      }
+    }
+
+    &:before {
+      @media (max-width: 960px) {
+        display: none;
+      }
+      content: '';
+      position: absolute;
+      top: 273px;
+      left: -57px;
+      height: 114px;
+      width: 114px;
+      background: url("../img/red-img.png");
+    }
+  }
+}
+
+//free-lecture!!!!!!!!!!!!!
+
+
+//students!!!!!!!!!!!!!!!!!
+
+
+.students {
+  @media (max-width: 960px) {
+    padding-top: 50px;
+  }
+  padding-top: 240px;
+  text-align: left;
+
+  h2 {
+    color: #000000;
+    padding-left: 80px;
+    margin-bottom: 25px;
+  }
+
+  a.gallery-link {
+    color: #d4d4d4;
+    font-family: "SegoeWPBold", sans-serif;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    margin-top: 25px;
+    margin-left: 80px;
+    padding-left: 30px;
+    position: relative;
+
+    &:before {
+      content: '\f0da';
+      font-family: 'FontAwesome';
+      font-size: 22px;
+      color: #ff1e3e;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .students-works {
+    @media (max-width: 640px) {
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &:before {
+        //@media (max-width: 1920px) {
+        //  font-size: 1.6vw;
+        //}
+        position: absolute;
+        left: 51px;
+        bottom: 65px;
+        font-family: "SegoeWPBold", sans-serif;
+        font-size: 33px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      &:after {
+        @media (max-width: 1920px) {
+          //font-size: 1vw;
+          bottom: 150px;
+        }
+        position: absolute;
+        left: 51px;
+        bottom: 115px;
+        font-family: "SegoeWP", sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+
+      &.work1:before {
+        content: 'Диана Голуб';
+      }
+      &.work1:after {
+        content: 'группа: сентябрь 2016';
+      }
+      &.work2:before {
+        content: 'Колесник неля';
+      }
+      &.work2:after {
+        content: 'группа: сентябрь 2016';
+      }
+      &.work3:before {
+        content: 'Касько Алёна';
+      }
+      &.work3:after {
+        content: 'группа: сентябрь 2016';
+      }
+      &.work4:before {
+        content: 'Ширякина марина';
+      }
+      &.work4:after {
+        content: 'группа: сентябрь 2016';
+      }
+    }
+
+    img:after {
+      content: '';
+      position: absolute;
+      background-color: #000000;
+      opacity: 0.78;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+
+//students!!!!!!!!!!!!!!!!!
+
+
+//contacts!!!!!!!!!!!!!!!!!
+
+.contacts {
+  @media (max-width: 960px) {
+    padding: 50px 10px 50px 10px;
+  }
+  padding-top: 155px;
+  padding-bottom: 215px;
+  text-align: left;
+
+  h2 {
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 80px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 80px;
+      top: 65px;
+      width: 220px;
+      height: 5px;
+      background-color: #ff1e3e;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 464px;
+    border: none;
+  }
+
+  .contacts-holder {
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    color: #000000;
+    padding-top: 95px;
+    display: flex;
+
+    .map {
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+      width: 50%;
+    }
+
+    .contacts-information {
+      @media (max-width: 960px) {
+        padding: 20px 0 20px 0;
+      }
+      padding: 12px 0 19px 132px;
+      position: relative;
+
+      &:after {
+        @media (max-width: 960px) {
+          display: none;
+        }
+        content: '';
+        position: absolute;
+        top: 170px;
+        left: -57px;
+        width: 114px;
+        height: 114px;
+        background: url("../img/map.jpg");
+      }
+
+      .phone {
+        color: #0e0e0e;
+        font-size: 40px;
+        font-family: "SegoeWPBold", sans-serif;
+
+        span {
+          font-family: "SegoeWPLight", sans-serif;
+        }
+      }
+
+      .working-time {
+        color: #c8c8c8;
+        font-family: "SegoeWP", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-left: 5px;
+      }
+
+      .address {
+        @media (max-width: 960px) {
+          margin-top: 45px;
+        }
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+        margin-top: 125px;
+
+        span {
+          font-family: "SegoeWPBold", sans-serif;
+        }
+      }
+
+      .connection {
+        @media (max-width: 960px) {
+          margin-top: 45px;
+        }
+        margin-top: 175px;
+
+        span {
+          position: relative;
+          padding-left: 40px;
+
+          &.mail {
+            margin-left: 20px;
+          }
+
+          &:before {
+            font-family: 'FontAwesome';
+            font-size: 22px;
+            color: #ff1e3e;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          &.skype:before {
+            content: '\f17e';
+          }
+
+          &.mail:before {
+            content: '\f0e0';
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//contacts!!!!!!!!!!!!!!!!!
+
+
+
+//program-section!!!!!!!!!!
+
+.program-section {
+  @media (max-width: 960px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  background-color: #f2f2f2;
+  padding-top: 44px;
+  padding-bottom: 35px;
+
+  p {
+    color: #aeaeae;
+    font-family: "SegoeWPLight", sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  img {
+    margin-top: 25px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//program-section!!!!!!!!!!
+
+
+
+
+
+//footer!!!!!!!!!!!!!!!!!!!
+
+footer {
+  background-color: #282828;
+  padding-top: 42px;
+  text-align: left;
+
+  .social {
+    @media (max-width: 640px) {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 85px;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #3b3b3b;
+
+    p {
+      color: #5d5d5d;
+      font-family: "SegoeWPLight", sans-serif;
+      font-size: 16px;
+    }
+
+    .footer-menu {
+      margin-top: 25px;
+
+      li {
+        width: 66px;
+        height: 66px;
+        border: 2px solid #3c3c3c;
+        text-align: center;
+
+        a{
+          transition: all ease-in-out 0.5s;
+
+          &:hover {
+            color: #ff1e3e;
+          }
+        }
+
+        i {
+          font-size: 30px;
+          line-height: 60px;
+        }
+      }
+    }
+
+    img {
+      margin-top: 56px;
+    }
+  }
+
+  .copyright {
+    @media (max-width: 640px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 81px;
+    padding-bottom: 21px;
+
+    img {
+      margin: 15px;
+    }
+
+    p {
+      margin-top: 22px;
+      color: #727272;
+      font-family: "SegoeWPLight", sans-serif;
+      font-size: 13px;
+    }
+  }
+}
+
+
+//footer!!!!!!!!!!!!!!!!!!!

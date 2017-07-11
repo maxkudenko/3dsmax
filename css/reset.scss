@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}
+body {
+  color: #fff;
+  font-family: "SegoeWPLight", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, a, p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+h1 {
+  font-family: "SegoeWPBold", sans-serif;
+  font-size: 75px;
+}
+h2 {
+  font-size: 32px;
+  font-family: "SegoeWPBold", sans-serif;
+  letter-spacing: 6.4px;
+}
+//h3 {
+//  color: $white;
+//  @include fontStyle($bigJohn, 24px);
+//  line-height: 1.5;
+//}
+//h4 {
+//  color: $white;
+//  @include fontStyle($amble, 24px);
+//}
+//h5 {
+//  @include fontStyle($bigJohn, 18px);
+//  color: $white;
+//}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+input {
+  border: none;
+}
+
